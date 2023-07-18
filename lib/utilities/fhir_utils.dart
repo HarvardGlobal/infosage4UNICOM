@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:fhir/r5.dart';
-import 'package:unicom_patient/entities/test_entities/medication.dart' as app_medication;
+import 'package:infosage_patient/entities/test_entities/medication.dart' as app_medication;
 import 'package:http/http.dart' as http;
-import 'package:unicom_patient/utilities/locale_utils.dart';
+import 'package:infosage_patient/utilities/locale_utils.dart';
 
 class ResourcesNames {
   static const String medicinalProductDefinition = "MedicinalProductDefinition";

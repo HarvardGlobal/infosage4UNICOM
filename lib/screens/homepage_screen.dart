@@ -1,10 +1,9 @@
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'package:unicom_patient/app_icons_icons.dart';
-import 'package:unicom_patient/screens/medications_list_screen.dart';
-import 'package:unicom_patient/screens/qr_scan_screen.dart';
-import 'package:unicom_patient/screens/settings_screen.dart';
-
+import 'package:infosage_patient/app_icons_icons.dart';
+import 'package:infosage_patient/screens/medications_list_screen.dart';
+import 'package:infosage_patient/screens/qr_scan_screen.dart';
+import 'package:infosage_patient/screens/settings_screen.dart';
 
 class HomepageScreen extends StatelessWidget {
   static const String route = '/home';
@@ -93,7 +92,7 @@ class HomepageScreen extends StatelessWidget {
   BoxDecoration buildBackgroundImage() {
     return const BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("images/backgrounds/home_page.png",),
+          image: AssetImage("assets/images/backgrounds/home_page.png",),
           opacity: 0.3,
           fit: BoxFit.fill,
         ),
@@ -105,7 +104,7 @@ class HomepageScreen extends StatelessWidget {
 
     return AppBar(
       toolbarHeight: 100,
-      title: const Image(image: AssetImage("images/logos/unicom.png")),
+      title: const Image(image: AssetImage("assets/images/logos/is_logo_main_small.png")),
       backgroundColor: transparent,
       shadowColor: transparent,
       centerTitle: true,

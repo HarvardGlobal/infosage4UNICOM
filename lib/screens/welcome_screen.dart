@@ -1,15 +1,14 @@
 import 'dart:collection';
 
-import 'package:country_flags/country_flags.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unicom_patient/database/locations_repository.dart';
-import 'package:unicom_patient/database/user_info_repository.dart';
-import 'package:unicom_patient/entities/location.dart';
-import 'package:unicom_patient/entities/test_entities/user_info.dart';
+import 'package:infosage_patient/database/locations_repository.dart';
+import 'package:infosage_patient/database/user_info_repository.dart';
+import 'package:infosage_patient/entities/location.dart';
+import 'package:infosage_patient/entities/test_entities/user_info.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:unicom_patient/themes/dropdowns.dart';
-import 'package:unicom_patient/widgets/buttons/primary_button.dart';
+import 'package:infosage_patient/themes/dropdowns.dart';
+import 'package:infosage_patient/widgets/buttons/primary_button.dart';
 
 import 'homepage_screen.dart';
 
@@ -56,7 +55,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SizedBox(width: 165, child: Image.asset('assets/images/logos/pharmawizard.png')),
+                    SizedBox(width: 165, child: Image.asset('assets/images/logos/is_logo_main_small.png')),
                     SizedBox(width: 85, child: Image.asset('assets/images/logos/unicom.png')),
                   ],
                 ),

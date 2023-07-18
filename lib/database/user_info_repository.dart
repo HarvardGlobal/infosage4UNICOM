@@ -1,25 +1,30 @@
 import 'package:flutter/foundation.dart';
 import 'package:localstorage/localstorage.dart';
-import 'package:unicom_patient/entities/test_entities/medication.dart';
-import 'package:unicom_patient/entities/test_entities/user_info.dart';
+import 'package:infosage_patient/entities/test_entities/medication.dart';
+import 'package:infosage_patient/entities/test_entities/user_info.dart';
 
 class UserInfoRepository {
   static late UserInfo _userInfo;
   static final LocalStorage _storage = LocalStorage('user_info.json');
 
-  static UserInfo get userInfo { return _userInfo; }
-  static LocalStorage get storage { return _storage; }
+  static UserInfo get userInfo {
+    return _userInfo;
+  }
+
+  static LocalStorage get storage {
+    return _storage;
+  }
 
   static Future<void> fetch() async {
     try {
-      final response = await _storage.ready.then((value) => _storage.getItem('userinfo'));
+      final response =
+          await _storage.ready.then((value) => _storage.getItem('userinfo'));
       if (response == null) {
         _userInfo = UserInfo();
         save();
       } else {
         _userInfo = UserInfo.fromMap(response);
       }
-
 
       // final response = await _storage.ready.then((value) => _storage.getItem('name'));
       // if (response == null) {
@@ -66,7 +71,8 @@ class UserInfoRepository {
     }
   }
 
-  static Future<void> addCorrelated(String medicationId, List<Medication> medications) async {
+  static Future<void> addCorrelated(
+      String medicationId, List<Medication> medications) async {
     try {
       _userInfo.addCorrelated(medicationId, medications);
       save();
@@ -76,7 +82,8 @@ class UserInfoRepository {
     }
   }
 
-  static Future<void> deleteCorrelated(String medicationId, List<Medication> medications) async {
+  static Future<void> deleteCorrelated(
+      String medicationId, List<Medication> medications) async {
     try {
       _userInfo.removeCorrelated(medicationId, medications);
       save();
