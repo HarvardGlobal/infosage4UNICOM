@@ -1,34 +1,33 @@
 {
   "project_info": {
-    "project_number": "559316165858",
-    "firebase_url": "https://unicom-be4cc-default-rtdb.europe-west1.firebasedatabase.app",
-    "project_id": "unicom-be4cc",
-    "storage_bucket": "unicom-be4cc.appspot.com"
+    "project_number": "755270334842",
+    "project_id": "infosage-unicom",
+    "storage_bucket": "infosage-unicom.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:559316165858:android:6675536b36ad6a8de26abb",
+        "mobilesdk_app_id": "1:755270334842:android:4232a19be3402a0db77ec3",
         "android_client_info": {
-          "package_name": "it.datawizard.unicom_patient"
+          "package_name": "org.infosagehealth.infosage_patient"
         }
       },
       "oauth_client": [
         {
-          "client_id": "559316165858-vnlfa28ohpjpo2ectu35h2ro1b7hu224.apps.googleusercontent.com",
+          "client_id": "755270334842-2675ubbqifge02geb43751b1dlp1377r.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAVS3QeaImCUs3zKL2eKbKXvuzHKtbAtdM"
+          "current_key": "AIzaSyBtNZXhHpWHkLMlInwkAL4fTz8mswHxteQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "559316165858-vnlfa28ohpjpo2ectu35h2ro1b7hu224.apps.googleusercontent.com",
+              "client_id": "755270334842-2675ubbqifge02geb43751b1dlp1377r.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

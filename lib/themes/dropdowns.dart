@@ -1,7 +1,7 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:unicom_patient/themes/colors.dart';
+import 'package:infosage_patient/themes/colors.dart';
 
 class BaseDropdown<T> extends StatefulWidget {
   final LinkedHashMap<T, Widget> dropdownItems;

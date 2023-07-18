@@ -2,10 +2,10 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
-import 'package:unicom_patient/database/user_info_repository.dart';
-import 'package:unicom_patient/screens/drug_scanned.dart';
-import 'package:unicom_patient/screens/medication_details_screen.dart';
-import 'package:unicom_patient/utilities/fhir_utils.dart';
+import 'package:infosage_patient/database/user_info_repository.dart';
+import 'package:infosage_patient/screens/drug_scanned.dart';
+import 'package:infosage_patient/screens/medication_details_screen.dart';
+import 'package:infosage_patient/utilities/fhir_utils.dart';
 
 import '../entities/test_entities/medication.dart';
 

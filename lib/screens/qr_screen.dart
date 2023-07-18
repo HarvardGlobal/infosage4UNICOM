@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:unicom_patient/entities/test_entities/medication.dart';
-import 'package:unicom_patient/screens/qr_scan_screen.dart';
-import 'package:unicom_patient/utilities/locale_utils.dart';
+import 'package:infosage_patient/entities/test_entities/medication.dart';
+import 'package:infosage_patient/screens/qr_scan_screen.dart';
+import 'package:infosage_patient/utilities/locale_utils.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:unicom_patient/widgets/buttons/primary_button.dart';
+import 'package:infosage_patient/widgets/buttons/primary_button.dart';
 
 class QrScreen extends StatefulWidget {
   static const String route = '/qr_screen';
@@ -64,7 +64,7 @@ class _QrScreen extends State<QrScreen> {
       child: Column(
           children:[
             Image.asset(
-              "images/placeholders/generic_drug.png",
+              "assets/images/placeholders/generic_drug.png",
               height: 60,
               width: 60,
               fit: BoxFit.fill,

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unicom_patient/database/user_info_repository.dart';
-import 'package:unicom_patient/entities/test_entities/medication.dart';
-import 'package:unicom_patient/entities/test_entities/user_info.dart';
-import 'package:unicom_patient/screens/medication_details_screen.dart';
-import 'package:unicom_patient/screens/search_screen.dart';
-import 'package:unicom_patient/screens/substitutions_list_screen.dart';
-import 'package:unicom_patient/themes/colors.dart';
-import 'package:unicom_patient/utilities/locale_utils.dart';
-import 'package:unicom_patient/widgets/buttons/primary_button.dart';
+import 'package:infosage_patient/database/user_info_repository.dart';
+import 'package:infosage_patient/entities/test_entities/medication.dart';
+import 'package:infosage_patient/entities/test_entities/user_info.dart';
+import 'package:infosage_patient/screens/medication_details_screen.dart';
+import 'package:infosage_patient/screens/search_screen.dart';
+import 'package:infosage_patient/screens/substitutions_list_screen.dart';
+import 'package:infosage_patient/themes/colors.dart';
+import 'package:infosage_patient/utilities/locale_utils.dart';
+import 'package:infosage_patient/widgets/buttons/primary_button.dart';
 import 'dart:math' as math;
 
 class MedicationsListScreen extends StatefulWidget {

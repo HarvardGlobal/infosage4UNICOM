@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unicom_patient/database/locations_repository.dart';
-import 'package:unicom_patient/database/user_info_repository.dart';
-import 'package:unicom_patient/entities/test_entities/user_info.dart';
-import 'package:unicom_patient/screens/drug_scanned.dart';
+import 'package:infosage_patient/database/locations_repository.dart';
+import 'package:infosage_patient/database/user_info_repository.dart';
+import 'package:infosage_patient/entities/test_entities/user_info.dart';
+import 'package:infosage_patient/screens/drug_scanned.dart';
 
-import 'package:unicom_patient/screens/homepage_screen.dart';
-import 'package:unicom_patient/screens/medications_list_screen.dart';
-import 'package:unicom_patient/screens/qr_scan_screen.dart';
-import 'package:unicom_patient/screens/qr_screen.dart';
-import 'package:unicom_patient/screens/search_screen.dart';
-import 'package:unicom_patient/screens/settings_screen.dart';
-import 'package:unicom_patient/screens/medication_details_screen.dart';
-import 'package:unicom_patient/screens/substitutions_list_screen.dart';
-import 'package:unicom_patient/screens/welcome_screen.dart';
-import 'package:unicom_patient/settings/locale.dart';
-import 'package:unicom_patient/themes/theme.dart';
-import 'package:unicom_patient/themes/typography.dart';
-import 'package:unicom_patient/utilities/fhir_utils.dart';
+import 'package:infosage_patient/screens/homepage_screen.dart';
+import 'package:infosage_patient/screens/medications_list_screen.dart';
+import 'package:infosage_patient/screens/qr_scan_screen.dart';
+import 'package:infosage_patient/screens/qr_screen.dart';
+import 'package:infosage_patient/screens/search_screen.dart';
+import 'package:infosage_patient/screens/settings_screen.dart';
+import 'package:infosage_patient/screens/medication_details_screen.dart';
+import 'package:infosage_patient/screens/substitutions_list_screen.dart';
+import 'package:infosage_patient/screens/welcome_screen.dart';
+import 'package:infosage_patient/settings/locale.dart';
+import 'package:infosage_patient/themes/theme.dart';
+import 'package:infosage_patient/utilities/fhir_utils.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
