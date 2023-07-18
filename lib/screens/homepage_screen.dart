@@ -1,10 +1,9 @@
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter/material.dart';
-import 'package:unicom_patient/app_icons_icons.dart';
-import 'package:unicom_patient/screens/medications_list_screen.dart';
-import 'package:unicom_patient/screens/qr_scan_screen.dart';
-import 'package:unicom_patient/screens/settings_screen.dart';
-
+import 'package:infosage_patient/app_icons_icons.dart';
+import 'package:infosage_patient/screens/medications_list_screen.dart';
+import 'package:infosage_patient/screens/qr_scan_screen.dart';
+import 'package:infosage_patient/screens/settings_screen.dart';
 
 class HomepageScreen extends StatelessWidget {
   static const String route = '/home';
@@ -16,7 +15,6 @@ class HomepageScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: buildAppBar(context),
       backgroundColor: Theme.of(context).colorScheme.background,
-
       body: Container(
         decoration: buildBackgroundImage(),
         child: Column(
@@ -32,30 +30,28 @@ class HomepageScreen extends StatelessWidget {
                         button1: HomepageButton(
                           icon: const Icon(Icons.access_alarms_sharp, size: 65),
                           onPressed: () {
-                            Navigator.pushNamed(context, MedicationsListScreen.route);
+                            Navigator.pushNamed(
+                                context, MedicationsListScreen.route);
                           },
                           child: Text(
-                              AppLocalizations.of(context)!.homepageScreen_Button_Medication,
+                              AppLocalizations.of(context)!
+                                  .homepageScreen_Button_Medication,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w700
-                              )
-                          ),
+                                  fontSize: 20, fontWeight: FontWeight.w700)),
                         ),
-
                         button2: HomepageButton(
-                          backgroundColor: Theme.of(context).colorScheme.secondary,
+                          backgroundColor:
+                              Theme.of(context).colorScheme.secondary,
                           icon: const Icon(AppIcons.qrcode, size: 65),
-                          onPressed: () => Navigator.pushNamed(context, QrScanScreen.route),
+                          onPressed: () =>
+                              Navigator.pushNamed(context, QrScanScreen.route),
                           child: Text(
-                              AppLocalizations.of(context)!.homepageScreen_Button_QrCode,
+                              AppLocalizations.of(context)!
+                                  .homepageScreen_Button_QrCode,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                  fontSize: 20,
-                                  fontWeight: FontWeight.w700
-                              )
-                          ),
+                                  fontSize: 20, fontWeight: FontWeight.w700)),
                         ),
                       ),
                       // buildButtonsRow(
@@ -80,24 +76,24 @@ class HomepageScreen extends StatelessWidget {
     );
   }
 
-  Row buildButtonsRow(BuildContext context, {required Widget button1, required Widget button2} ) {
+  Row buildButtonsRow(BuildContext context,
+      {required Widget button1, required Widget button2}) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        button1,
-        button2
-      ],
+      children: [button1, button2],
     );
   }
 
   BoxDecoration buildBackgroundImage() {
     return const BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage("assets/images/backgrounds/home_page.png",),
-          opacity: 0.3,
-          fit: BoxFit.fill,
+      image: DecorationImage(
+        image: AssetImage(
+          "assets/images/backgrounds/home_page.png",
         ),
-      );
+        opacity: 0.3,
+        fit: BoxFit.fill,
+      ),
+    );
   }
 
   PreferredSizeWidget buildAppBar(BuildContext context) {
@@ -105,7 +101,8 @@ class HomepageScreen extends StatelessWidget {
 
     return AppBar(
       toolbarHeight: 100,
-      title: const Image(image: AssetImage("assets/images/logos/unicom.png")),
+      title: const Image(
+          image: AssetImage("assets/images/logos/is_logo_main_small.png")),
       backgroundColor: transparent,
       shadowColor: transparent,
       centerTitle: true,
@@ -128,7 +125,6 @@ class HomepageScreen extends StatelessWidget {
   }
 }
 
-
 class HomepageButton extends StatelessWidget {
   final Widget? child;
   final Icon? icon;
@@ -150,32 +146,29 @@ class HomepageButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 12),
       child: SizedBox(
-        height: dimension,
-        width: dimension,
-        child: ElevatedButton(
-          onPressed: onPressed,
-
-          style: ElevatedButton.styleFrom(
-            backgroundColor: backgroundColor ?? Theme.of(context).colorScheme.primary,
-            shape: const CircleBorder(),
-          ),
-
-          child: Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 8),
-                  child: icon,
-                ),
-                child ?? const Text(""),
-              ],
+          height: dimension,
+          width: dimension,
+          child: ElevatedButton(
+            onPressed: onPressed,
+            style: ElevatedButton.styleFrom(
+              backgroundColor:
+                  backgroundColor ?? Theme.of(context).colorScheme.primary,
+              shape: const CircleBorder(),
             ),
-          ),
-        )
-      ),
+            child: Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(bottom: 8),
+                    child: icon,
+                  ),
+                  child ?? const Text(""),
+                ],
+              ),
+            ),
+          )),
     );
   }
 }
-

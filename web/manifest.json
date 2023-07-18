@@ -1,6 +1,6 @@
 {
-    "name": "unicom_patient",
-    "short_name": "unicom_patient",
+    "name": "infosage_patient",
+    "short_name": "infosage_patient",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

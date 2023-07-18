@@ -3,13 +3,12 @@ import 'dart:collection';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:unicom_patient/database/locations_repository.dart';
-import 'package:unicom_patient/database/user_info_repository.dart';
-import 'package:unicom_patient/entities/location.dart';
-import 'package:unicom_patient/entities/test_entities/user_info.dart';
-import 'package:unicom_patient/themes/colors.dart';
-import 'package:unicom_patient/themes/dropdowns.dart';
-
+import 'package:infosage_patient/database/locations_repository.dart';
+import 'package:infosage_patient/database/user_info_repository.dart';
+import 'package:infosage_patient/entities/location.dart';
+import 'package:infosage_patient/entities/test_entities/user_info.dart';
+import 'package:infosage_patient/themes/colors.dart';
+import 'package:infosage_patient/themes/dropdowns.dart';
 
 class SettingsScreen extends StatelessWidget {
   static const String route = "/settings";

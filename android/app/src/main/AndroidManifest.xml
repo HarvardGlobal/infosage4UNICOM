@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.datawizard.unicom.patient">
+    package="org.infosagehealth.unicom_patient">
    <application
-        android:label="unicom_patient"
+        android:label="infosage_patient"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
