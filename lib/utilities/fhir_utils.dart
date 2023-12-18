@@ -87,7 +87,7 @@ class ApiFhir {
   static Future<List<app_medication.Medication>> getMedicationsByPrefix(String prefix) async {
     var headers = {'Content-type': 'application/fhir+json'};
 
-    var queryParameters = {'name': prefix, 'name-language-correct': '100000072194'};
+    var queryParameters = {'name': prefix, 'name-language-correct': '100000072147'};
     Uri uri = getUri(instance.serverUrl, '/fhir/${ResourcesNames.medicinalProductDefinition}', queryParameters);
 
     var response = await http.get(uri, headers: headers);
