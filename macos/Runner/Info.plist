@@ -28,5 +28,7 @@
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>NSCameraUsageDescription</key>
+	<string>This app uses the camera to scan in a medicine QR code from the provider facing app.</string>
 </dict>
 </plist>
