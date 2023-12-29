@@ -50,7 +50,7 @@
 	<key>UIStatusBarHidden</key>
 	<false/>
 	<key>NSCameraUsageDescription</key>
-	<string></string>
+	<string>This app uses the camera to scan in a medicine QR code from the provider facing app.</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 </dict>
