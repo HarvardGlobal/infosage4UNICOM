@@ -72,16 +72,16 @@ class _DrugScannedScreenState extends State<DrugScannedScreen> {
   Widget buildSubstitutionInfo(BuildContext context){
       return Container(
         constraints: BoxConstraints(
-            minHeight: 220,
-            minWidth: MediaQuery.of(context).size.width - 30*2,
+            //minHeight: 220,
+            //minWidth: MediaQuery.of(context).size.width - 30*2,
         ),
         decoration: BoxDecoration(
-          border: Border.all(color: Theme.of(context).colorScheme.onSurfaceVariant, width: 3),
-          borderRadius: const BorderRadius.all(Radius.circular(20)),
+          border: Border.all(color: Theme.of(context).colorScheme.onSurfaceVariant, width: 0),
+          borderRadius: const BorderRadius.all(Radius.circular(0)),
         ),
-        child: Expanded(
+        //child: Expanded(
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 45.0),
+            padding: const EdgeInsets.symmetric(vertical: 0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -99,7 +99,7 @@ class _DrugScannedScreenState extends State<DrugScannedScreen> {
               ],
             ),
           ),
-        ),
+        //),
       );
   }
 
