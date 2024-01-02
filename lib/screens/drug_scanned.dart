@@ -63,7 +63,7 @@ class _DrugScannedScreenState extends State<DrugScannedScreen> {
           },
           child: Text(
               LocaleUtils.translate(context).drugScannedScreen_Button_AddToList,
-              style: const TextStyle(fontWeight: FontWeight.w600)
+              style: const TextStyle(color: Colors.white, fontWeight: FontWeight.w600)
           ),
         ),
       ],

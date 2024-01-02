@@ -51,6 +51,7 @@ class _QrScreen extends State<QrScreen> {
               child: Text(
                 LocaleUtils.translate(context).qrScreen_Info_Text,
                 textAlign: TextAlign.center,
+                style: const TextStyle(color: Colors.white),
               ),
             )
           ]

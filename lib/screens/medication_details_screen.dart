@@ -114,7 +114,8 @@ class _MedicationDetailsScreenState extends State<MedicationDetailsScreen> {
           child: Text(
               LocaleUtils.translate(context).medicationsListScreen_RelatedDrugs.toUpperCase(),
               style: TextStyle(
-                color: Theme.of(context).colorScheme.onBackground,
+                //color: Theme.of(context).colorScheme.onBackground,
+                color: Colors.white,
                 fontWeight: FontWeight.w600,
               )
           ),
@@ -128,7 +129,7 @@ class _MedicationDetailsScreenState extends State<MedicationDetailsScreen> {
         onPressed: () {
           Navigator.pushNamed(context, QrScreen.route, arguments: {'medication': _medication});
         },
-        child: Text(LocaleUtils.translate(context).medicationsListScreen_GenerateQR),
+        child: Text(style: const TextStyle(color:Colors.white), LocaleUtils.translate(context).medicationsListScreen_GenerateQR),
       ),
     );
     return Column(
@@ -193,7 +194,7 @@ class _MedicationDetailsScreenState extends State<MedicationDetailsScreen> {
           }
         );
       },
-      child: Text(LocaleUtils.translate(context).medicationDetailsScreen_Button_AddToList),
+      child: Text(style: const TextStyle(color: Colors.white), LocaleUtils.translate(context).medicationDetailsScreen_Button_AddToList),
     );
   }
   

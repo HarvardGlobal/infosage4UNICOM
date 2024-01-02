@@ -115,7 +115,7 @@ class _MedicationsListScreenState extends State<MedicationsListScreen> {
             ),
             PrimaryButton(
               onPressed: (){ Navigator.pushNamed(context, SearchScreen.route); },
-              child: Text(LocaleUtils.translate(context).button_AddDrug))
+              child: Text(style: const TextStyle(color: Colors.white), LocaleUtils.translate(context).button_AddDrug))
           ],
         ),
       ),

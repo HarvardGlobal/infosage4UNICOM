@@ -38,7 +38,7 @@ class HomepageScreen extends StatelessWidget {
                                   .homepageScreen_Button_Medication,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w700)),
+                                  color: Colors.white, fontSize: 14)),
                         ),
                         button2: HomepageButton(
                           backgroundColor:
@@ -51,7 +51,7 @@ class HomepageScreen extends StatelessWidget {
                                   .homepageScreen_Button_QrCode,
                               textAlign: TextAlign.center,
                               style: const TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.w700)),
+                                  color: Colors.white, fontSize: 14)),
                         ),
                       ),
                       // buildButtonsRow(
