@@ -169,6 +169,7 @@ class _MedicationDetailsScreenState extends State<MedicationDetailsScreen> {
                       child: Center(child: PrimaryButton(
                         onPressed: (){ Navigator.popUntil(context, ModalRoute.withName(MedicationsListScreen.route)); },
                         child: Text(
+                          style: const TextStyle(color: Colors.white),
                           LocaleUtils.translate(context).medicationDetailsScreen_Modal_Button_GoToList
                         ),
                       )),
